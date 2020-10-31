@@ -1,4 +1,4 @@
-./idea
+./.idea
 
 # ignore kafka volumes
 ./kafka/connectors
