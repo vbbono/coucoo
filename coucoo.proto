@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "pb";
+
+service Coupon {
+  rpc RequestCoupon (User) returns (Success) {}
+}
+
+message User {
+  int64 ID = 1;
+}
+
+message Success {
+  bool OK = 1;
+}
