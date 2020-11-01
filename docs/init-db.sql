@@ -49,8 +49,8 @@ CREATE TABLE IF NOT EXISTS `coucoo`.`users_has_coupons` (
   `users_id` INT(11) NOT NULL,
   `coupons_id` INT(11) NOT NULL,
   PRIMARY KEY (`users_id`, `coupons_id`),
-  INDEX `fk_users_has_coupons_coupons1_idx` (`coupons_id` ASC) VISIBLE,
-  INDEX `fk_users_has_coupons_users_idx` (`users_id` ASC) VISIBLE,
+  INDEX `fk_users_has_coupons_coupons1_idx` (`coupons_id` ASC),
+  INDEX `fk_users_has_coupons_users_idx` (`users_id` ASC),
   CONSTRAINT `fk_users_has_coupons_users`
     FOREIGN KEY (`users_id`)
     REFERENCES `coucoo`.`users` (`id`)

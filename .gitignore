@@ -1,0 +1,6 @@
+./idea
+
+# ignore kafka volumes
+./kafka/connectors
+./kafka/zk-multiple-kafka-multiple
+
